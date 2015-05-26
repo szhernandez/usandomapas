@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">usandomapas</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="satelite">Vista Satelite</string>
+    <string name="hibrido">Vista hibrida</string>
+    <string name="terreno">Vista terreno</string>
+    <string name="marker">Ir</string>
+</resources>
