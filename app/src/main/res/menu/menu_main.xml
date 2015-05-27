@@ -14,6 +14,14 @@
         android:title="@string/terreno"
         android:orderInCategory="100"
         app:showAsAction="never" />
+    <item android:id="@+id/nor"
+        android:title="@string/normal"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/none"
+        android:title="@string/ninguno"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
     <item android:id="@+id/irmarcador"
         android:title="@string/marker"
         android:orderInCategory="100"

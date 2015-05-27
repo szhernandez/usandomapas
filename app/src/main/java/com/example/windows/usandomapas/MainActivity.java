@@ -87,6 +87,12 @@ public class MainActivity extends ActionBarActivity {
             case R.id.ter:
                 googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
                 break;
+            case R.id.nor:
+                googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                break;
+            case R.id.none:
+                googleMap.setMapType(GoogleMap.MAP_TYPE_NONE);
+                break;
             case R.id.irmarcador:
                 gomarker();
                 break;

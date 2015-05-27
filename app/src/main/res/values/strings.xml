@@ -7,4 +7,6 @@
     <string name="hibrido">Vista hibrida</string>
     <string name="terreno">Vista terreno</string>
     <string name="marker">Ir</string>
+    <string name="normal">Normal</string>
+    <string name="ninguno">Ninguno</string>
 </resources>
