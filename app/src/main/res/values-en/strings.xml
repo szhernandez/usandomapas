@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Using maps</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="satelite">MAP TYPE SATELLITE</string>
+    <string name="hibrido">MAP TYPE HYBRID</string>
+    <string name="terreno">MAP TYPE TERRAIN</string>
+    <string name="marker">Go</string>
+    <string name="normal">MAP TYPE NORMAL</string>
+    <string name="ninguno">MAP TYPE NONE</string>
+    <string name="casa">My home</string>
+</resources>

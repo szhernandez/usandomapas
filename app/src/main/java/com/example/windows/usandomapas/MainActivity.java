@@ -48,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
             double longitude = -100.6754476;
 
             //Crear marcador
-            MarkerOptions marker = new MarkerOptions().position(new LatLng(latitude, longitude)).title("Mi casa");
+            MarkerOptions marker = new MarkerOptions().position(new LatLng(latitude, longitude)).title(getString(R.string.casa));
 
             //Agregar color al marcador
             marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
