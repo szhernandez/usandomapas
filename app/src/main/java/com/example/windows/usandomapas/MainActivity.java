@@ -20,10 +20,10 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //relacionar el fragmento en donde se mostrara el mapa
         googleMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapa)).getMap();
-            //Cambiar el tipo de mapa
 
+            //Cambiar el tipo de mapa
            googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
             //Mostrar u ocultar tu ubicacion
             googleMap.setMyLocationEnabled(true);
@@ -55,11 +55,6 @@ public class MainActivity extends ActionBarActivity {
 
             //agregar marker
             googleMap.addMarker(marker);
-
-
-
-        //}catch (Exception e){e.printStackTrace();}
-
     }
 
 
@@ -78,32 +73,38 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         switch (item.getItemId()){
+            //En caso de clic cambiar tipo de mapa a satelital
             case R.id.sat:
                 googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
                 break;
+            //En caso de clic cambiar tipo de mapa a hibrido
             case R.id.hib:
                 googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
                 break;
+            //En caso de clic cambiar tipo de mapa a terreno
             case R.id.ter:
                 googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
                 break;
+            //En caso de clic cambiar tipo de mapa a nomal
             case R.id.nor:
                 googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
                 break;
+            //En caso de clic cambiar tipo de mapa a ninguno
             case R.id.none:
                 googleMap.setMapType(GoogleMap.MAP_TYPE_NONE);
                 break;
+            //En caso de clic ir al marcador
             case R.id.irmarcador:
                 gomarker();
                 break;
         }
-
         return super.onOptionsItemSelected(item);
     }
     public void gomarker(){
+        //MEtodo que crea la animacion para visualizar el marcador
         if (googleMap.getMyLocation() != null)
             googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
-                    new LatLng(googleMap.getMyLocation().getLatitude(), googleMap.getMyLocation().getLongitude()), 17));
+            new LatLng(googleMap.getMyLocation().getLatitude(), googleMap.getMyLocation().getLongitude()), 17));
     }
 
 }
